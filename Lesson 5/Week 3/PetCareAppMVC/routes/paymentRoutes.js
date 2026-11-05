@@ -9,4 +9,6 @@ router.get(
   paymentController.preparePayment
 );
 
+router.post('/payments/mock/:serviceId', paymentController.createMockPayment);
+
 module.exports = router;
